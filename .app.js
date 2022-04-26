@@ -2,7 +2,7 @@ var app = new Vue({
     el: "#app",
     data: {
     
-        mensajebienvenida: "Hola Mundo, bienvenidos",
+        mensajeBienvenida: "Hola Mundo, bienvenidos",
         numeroA: 50,
         numeroB: 25,
     
@@ -15,6 +15,7 @@ var app = new Vue({
     },
     computed: {
         MultiplicarAyB() {
+            console.log("MultiplicarAyB")
             return this.numeroA * this.numeroB;
         }
     }
