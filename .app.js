@@ -1,21 +1,18 @@
 var app = new Vue({
-    el: "#miPrimerApp",
+    el: "#app",
     data: {
-        mensajeBienvenida: "Hola Coders, Hola Mundo",
-        numeroA: 12,
-        numeroB: 24, 
+        mensajebienvenida: "Primer proyecto Vue 2",
+        numeroA: 50,
+        numeroB: 25,
     },
-
-methods: {
-    SumarAyB(){
-        return this,nuemroA + this.numeroB ;
+    methods: {
+        SumarAyB() {
+        return this.numeroA - this.numeroB;
+        },
+    },
+    computed: {
+        MultiplicarAyB() {
+            return this.numeroA * this.numeroB;
+        }
     }
-
-},
-computed:{
-    NuevosumarAyB(){
-    return this,nuemroA + this.numeroB ;
-}
-
-}
 });
