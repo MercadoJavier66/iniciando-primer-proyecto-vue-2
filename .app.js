@@ -1,13 +1,16 @@
 var app = new Vue({
     el: "#app",
     data: {
+    
         mensajebienvenida: "Hola Mundo, bienvenidos",
         numeroA: 50,
         numeroB: 25,
+    
     },
     methods: {
         SumarAyB() {
-        return this.numeroA - this.numeroB;
+            console.log("SumarAyB")
+        return this.numeroA + this.numeroB;
         },
     },
     computed: {
