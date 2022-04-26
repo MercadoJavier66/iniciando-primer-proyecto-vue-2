@@ -1,7 +1,7 @@
 var app = new Vue({
     el: "#app",
     data: {
-        mensajebienvenida: "Primer proyecto Vue 2",
+        mensajebienvenida: "Hola Mundo, bienvenidos",
         numeroA: 50,
         numeroB: 25,
     },
